@@ -1,0 +1,42 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: ./app/frontend
+    ports:
+      - 3000:3000
+    platform: linux/x86_64
+    working_dir: /app-frontend
+    depends_on:
+      - backends
+    networks:
+      - rede-virtual-2  
+  backends:
+    build: ./Backend
+    links:
+    - db
+    ports: 
+     - 3001:3001 
+    environment:
+      - DB_SERVER=db
+    networks:
+      - rede-virtual-1
+      - rede-virtual-2
+  db:
+    image: postgres:10.16
+    container_name: db
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: NG_Cash
+    ports: 
+      - 5432:5432
+    volumes: 
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - rede-virtual-1  
+volumes: 
+  db-data:
+networks:
+  rede-virtual-1: 
+  rede-virtual-2:    
