@@ -17,6 +17,8 @@ Informações Uteis:
 
 # ** 1 - Foram criado 2 usuarios "default" no banco de dados para serem ultilizados pra testes:
 
+PS: imputs de login case sensitive!
+
 usuario: Zezito
 senha: 123123Xd
 
