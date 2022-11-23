@@ -13,11 +13,9 @@ module.exports = {
     up(queryInterface, Sequelize) {
         return __awaiter(this, void 0, void 0, function* () {
             yield queryInterface.bulkInsert('accounts', [{
-                    id: 1,
                     balance: 100,
                 },
                 {
-                    id: 2,
                     balance: 323,
                 }
             ], {});

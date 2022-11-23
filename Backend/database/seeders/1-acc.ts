@@ -5,12 +5,10 @@ module.exports = {
   async up (queryInterface, Sequelize) {
   
       await queryInterface.bulkInsert('accounts', [{
-        id: 1,
         balance: 100,
 
      },
      {
-      id: 2,
       balance:323,
      }
     ], {});
