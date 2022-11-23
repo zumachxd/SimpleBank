@@ -7,7 +7,7 @@ Execução do Projeto:
 
 # Passo 1 - Clonar o projeto.
 # Passo 2 - trocar a branch para Front
-# Passo 3 - Com o Docker instalado na sua máquina, use o comando "docke-composer up -d --build".
+# Passo 3 - Com o Docker instalado na sua máquina, use o comando "docker-compose up -d --build".
 
 Rotas:  * Banco de dados: 5432.
         * Frontend: 3000.
