@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   frontend:
-    build: ./app/frontend
+    build: ./frontend
     ports:
       - 3000:3000
     platform: linux/x86_64
@@ -13,12 +13,12 @@ services:
       - rede-virtual-2  
   backends:
     build: ./Backend
-    links:
-    - db
+    depends_on:
+     - db
     ports: 
      - 3001:3001 
     environment:
-      - DB_SERVER=db
+      - DB_HOST=db
     networks:
       - rede-virtual-1
       - rede-virtual-2

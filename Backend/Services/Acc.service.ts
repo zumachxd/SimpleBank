@@ -8,13 +8,11 @@ import User from "../database/models/User.model";
 export default class AccountService {
   private trade;
   private user;
-  private acc;
   
 
     constructor() {
       this.trade = Transaction;
       this.user = User;
-      this.acc = Account;
     }
 
     public async newTransaction( cashOutId: number, cashInId:number, value: number, createdAt: Date ) {
@@ -31,12 +29,6 @@ export default class AccountService {
        INNER JOIN users AS us2 ON ts."debitedAccountId" = us2.id
        WHERE ts."debitedAccountId" = ${user.accountId} OR ts."credtedAccountId" = ${user.accountId}`
        const myT = await this.trade.sequelize?.query(Querry)
-      //  const myT = await this.trade.findAll({ 
-      //    where: {
-      //      debitedAccountId: user.accountId,
-      //            },
-      //            include: [{model: this.acc, as: 'cred'},{model: this.acc, as: 'debt'}, this.user   ]
-      //                });
       return {myT};
     };
 

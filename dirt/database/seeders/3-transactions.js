@@ -12,18 +12,30 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 module.exports = {
     up(queryInterface, Sequelize) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield queryInterface.bulkInsert('accounts', [{
-                    balance: 100,
+            yield queryInterface.bulkInsert('transactions', [{
+                    debitedAccountId: 1,
+                    value: 14,
+                    credtedAccountId: 2,
+                    createdAt: "2022/11/20"
                 },
                 {
-                    balance: 323,
+                    debitedAccountId: 1,
+                    value: 25,
+                    credtedAccountId: 2,
+                    createdAt: "2022/11/18"
+                },
+                {
+                    debitedAccountId: 2,
+                    value: 50,
+                    credtedAccountId: 1,
+                    createdAt: "2022/10/28"
                 }
             ], {});
         });
     },
     down(queryInterface, Sequelize) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield queryInterface.bulkDelete('account', null, {});
+            yield queryInterface.bulkDelete('transactions', null, {});
         });
     }
 };
