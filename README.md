@@ -15,7 +15,7 @@ Rotas:  * Banco de dados: 5432.
 
 Informações Uteis:
 
-** 1 - Foram criado 2 usuarios "default" no banco de dados para serem ultilizados pra testes:
+# ** 1 - Foram criado 2 usuarios "default" no banco de dados para serem ultilizados pra testes:
 
 usuario: Zezito
 senha: 123123Xd
@@ -25,4 +25,6 @@ pw: 33933393Xd
 
 ___________________________________________________________________//________________________________________________________________
 
-** 2 - Crie novos usuarios pra interagir com os ja existente.
+# ** 2 - Crie novos usuarios pra interagir com os ja existente.
+
+Vlw <3 !
