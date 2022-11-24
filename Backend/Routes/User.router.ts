@@ -6,7 +6,7 @@ const router = Router();
 const controller = new UserControl();
 
 router.put('/', controller.newUser);
-router.get('/', controller.allUsers);
+router.get('/', controller.allUsers); // ROTA GET PRA TESTES //
 router.post('/', controller.newLogin);
 router.get('/balance', controller.getBalance);
 router.post('/trade', controller.tradeCash);

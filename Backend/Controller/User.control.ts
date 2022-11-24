@@ -32,6 +32,8 @@ export default class UserControl {
     return res.status(200).json(getBalance)
  }
 
+ // ROTA DE TESTES GET//
+
  public allUsers = async (req: Request, res: Response) => {
     const allUsers = await this.service.getAllUsers();
     return res.status(200).json(allUsers)
