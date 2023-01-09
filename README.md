@@ -9,7 +9,7 @@ Execução do Projeto:
 # Passo 2 - trocar a branch para Front
 # Passo 3 - Com o Docker instalado na sua máquina, use o comando "docker-compose up -d --build".
 
-Rotas:  * Banco de dados: 5432.
+Portas:  * Banco de dados: 5432.
         * Frontend: 3000.
         * Backend: 3001.
 
@@ -23,7 +23,7 @@ usuario: Zezito
 senha: 123123Xd
 
 usurario: EdwardElric
-pw: 33933393Xd
+senha: 33933393Xd
 
 
 
