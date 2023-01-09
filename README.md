@@ -1,7 +1,7 @@
 # SimpleBank
 
 Projeto simples  Backend + Frontend  "dockerizado" utilizando NodeJS, React, Typescrip e Js, e Sequelize,
-desenvolvido para o processo seletivo da NG_Cash,!
+desenvolvido para o processo seletivo da NG_Cash, aceito dicas, sugestões e tudo mais!
 
 Execução do Projeto:
 
